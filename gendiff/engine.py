@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+
 from gendiff.formatters.stylish import make_string
 
 
@@ -8,6 +9,7 @@ def read_file(file):
     with open(file_path, 'r') as json_file:
         data = json.load(json_file)
         return data
+
 
 def generate_diff(file1, file2):
     data1 = read_file(file1)
