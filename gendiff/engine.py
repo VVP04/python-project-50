@@ -1,5 +1,3 @@
-import json
-from pathlib import Path
 
 from gendiff.formatters.stylish import make_string
 from gendiff.parser import parse_file
