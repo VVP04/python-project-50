@@ -20,4 +20,3 @@ def parse_file(file):
         with open(file_path, 'r') as file_obj:
             data = yaml.safe_load(file_obj)
         return data
-    raise ValueError(f'Unsupported file extension: {format_file}')
