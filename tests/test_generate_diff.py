@@ -14,5 +14,5 @@ def expected_stylish_output():
 ])
 def test_generate_diff(file1, file2, format, expected_output, request):
     output = request.getfixturevalue(expected_output)
-    result = generate_diff(file1, file2, format=format)
+    result = generate_diff(file1, file2, format_name=format)
     assert result == output
