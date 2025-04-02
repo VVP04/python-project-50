@@ -8,7 +8,6 @@ def get_formatted_value(value, add_quotes):
     return value
 
 
-
 def get_key_data(type_of_change, key_values, add_quotes=False):
     if type_of_change == 'updated':
         return (
@@ -21,6 +20,7 @@ def get_key_data(type_of_change, key_values, add_quotes=False):
         key_values['key_type'],
         get_formatted_value(key_values['value'], add_quotes)
     ) 
+
 
 def wrap_with_braces(lines: list, format) -> str:
     if format == 'stylish':

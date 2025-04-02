@@ -1,5 +1,6 @@
 from gendiff.formatters.utils import get_key_data, wrap_with_braces
 
+
 def format_plain(diff_dict):
     def get_lines(diff, path):
         lines = []
@@ -13,9 +14,13 @@ def format_plain(diff_dict):
             formatted_path = '.'.join(new_path)
 
             if change == 'updated':
-                old_type, new_type, old_val, new_val = get_key_data(change, value, True)
-                old_value = old_val if old_type == 'flat_key' else '[complex value]'
-                new_value = new_val if new_type == 'flat_key' else '[complex value]'
+                old_type, new_type, old_val, new_val = get_key_data(change, 
+                                                                    value, 
+                                                                    True)
+                old_value = old_val if old_type == 'flat_key' \
+                    else '[complex value]'
+                new_value = new_val if new_type == 'flat_key' \
+                    else '[complex value]'
 
                 lines.append(f"Property '{formatted_path}' was updated. "
                              f"From {old_value} to {new_value}")
@@ -30,8 +35,10 @@ def format_plain(diff_dict):
                     lines.append(f"Property '{formatted_path}' was removed")
 
                 elif change == 'added':
-                    value_repr = val if key_type == 'flat_key' else '[complex value]'
-                    lines.append(f"Property '{formatted_path}' was added with value: {value_repr}")
+                    value_repr = val if key_type == 'flat_key' \
+                        else '[complex value]'
+                    lines.append(f"Property '{formatted_path}' \
+                        was added with value: {value_repr}")
 
         return lines
             
