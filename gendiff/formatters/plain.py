@@ -37,8 +37,10 @@ def format_plain(diff_dict):
                 elif change == 'added':
                     value_repr = val if key_type == 'flat_key' \
                         else '[complex value]'
-                    lines.append(f"Property '{formatted_path}' \
-                        was added with value: {value_repr}")
+                    lines.append(
+                        f"Property '{formatted_path}' "
+                        f"was added with value: {value_repr}"
+                    )
 
         return lines
             
