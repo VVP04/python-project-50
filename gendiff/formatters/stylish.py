@@ -1,29 +1,4 @@
-def get_formatted_value(value):
-    if value is True:
-        return 'true'
-    if value is False:
-        return 'false'
-    if value is None:
-        return 'null'
-    return value
-
-
-def get_key_data(type_of_change, key_values):
-    if type_of_change == 'updated':
-        return (
-            key_values['old_key_type'],
-            key_values['new_key_type'],
-            get_formatted_value(key_values['old_value']),
-            get_formatted_value(key_values['new_value'])
-        )
-    return (
-        key_values['key_type'],
-        get_formatted_value(key_values['value'])
-    ) 
-
-
-def wrap_with_braces(lines: list) -> str:
-    return '{\n' + '\n'.join(lines) + '\n}'
+from gendiff.formatters.utils import get_key_data, wrap_with_braces
 
 
 def format_stylish(diff_dict: dict) -> str:
@@ -76,5 +51,5 @@ def format_stylish(diff_dict: dict) -> str:
         return lines
 
     lines = get_lines(diff_dict, 4)
-    formatted_diff = wrap_with_braces(lines)
+    formatted_diff = wrap_with_braces(lines, 'stylish')
     return formatted_diff
