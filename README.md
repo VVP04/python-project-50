@@ -7,5 +7,7 @@
 [![asciicast](https://asciinema.org/a/708426.svg)](https://asciinema.org/a/708426)
 #### Comparison of flat YAML files
 [![asciicast](https://asciinema.org/a/709193.svg)](https://asciinema.org/a/709193)
-#### Comparison of nested YAML and JSON files
+#### Stylish-formatted comparison of nested YAML and JSON files
 [![asciicast](https://asciinema.org/a/710981.svg)](https://asciinema.org/a/710981)
+#### Plain-formatted comparison of nested YAML and JSON files
+[![asciicast](https://asciinema.org/a/711171.svg)](https://asciinema.org/a/711171)
