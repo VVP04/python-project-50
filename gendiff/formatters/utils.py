@@ -23,7 +23,7 @@ def get_key_data(type_of_change, key_values, add_quotes=False):
 
 
 def wrap_with_braces(lines: list, format) -> str:
-    if format == 'stylish':
+    if format == 'stylish' or format == 'json':
         return '{\n' + '\n'.join(lines) + '\n}'
     if format == 'plain':
-        return '\n'.join(lines) if lines else ' '
+        return '\n'.join(lines)
