@@ -11,3 +11,5 @@
 [![asciicast](https://asciinema.org/a/710981.svg)](https://asciinema.org/a/710981)
 #### Plain-formatted comparison of nested YAML and JSON files
 [![asciicast](https://asciinema.org/a/711171.svg)](https://asciinema.org/a/711171)
+#### JSON-formatted comparison of nested YAML and JSON files
+[![asciicast](https://asciinema.org/a/711195.svg)](https://asciinema.org/a/711195)
