@@ -6,7 +6,7 @@ EXPECTED_DIFF_DICT = {
             'follow': {
                 'type_of_change': 'added',
                 'key_type': 'flat_key',
-                'value': False  
+                'value': False
             },
             'setting1': {
                 'type_of_change': 'intact',
@@ -20,8 +20,8 @@ EXPECTED_DIFF_DICT = {
             },
             'setting3': {
                 'type_of_change': 'updated',
-                'old_value': True, 
-                'new_value': None,  
+                'old_value': True,
+                'new_value': None,
                 'old_key_type': 'flat_key', 
                 'new_key_type': 'flat_key'   
             },
@@ -51,7 +51,7 @@ EXPECTED_DIFF_DICT = {
                         'value': {
                             'wow': {
                                 'type_of_change': 'updated',
-                                'old_value': '',  
+                                'old_value': '',
                                 'new_value': 'so much',
                                 'old_key_type': 'flat_key',
                                 'new_key_type': 'flat_key'
@@ -97,8 +97,8 @@ EXPECTED_DIFF_DICT = {
                         'value': 'value'  
                     }
                 },
-                'new_value': 'str',  
-                'old_key_type': 'nested_key',  
+                'new_value': 'str',
+                'old_key_type': 'nested_key',
                 'new_key_type': 'flat_key'      
             }
         }
